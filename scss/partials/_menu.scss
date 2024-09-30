@@ -1,0 +1,225 @@
+// Colors
+$primary-color: #5BACC3; // Nitro-Blue
+$secondary-color: #FFF0ED; // Nitro-Pink
+$graphite-color: #393939; // Graphite
+$white-color: #FFF; // White
+$gray-color: #909090;
+$light-gray-color: #F7F7F7;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $light-gray-color;
+  color: $graphite-color;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+// Header & Navigation
+header {
+  background-color: $secondary-color;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  .logo-and-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .image-logo {
+    height: 50px;
+    margin-right: 0.93rem;
+  }
+
+  .coffee-name {
+    font-size: 1.87rem;
+    font-weight: bold;
+    color: $graphite-color;
+  }
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    font-size: 1.31rem;
+    text-decoration: none;
+    color: $graphite-color;
+    font-weight: 500;
+    padding: 0.62rem 1.25rem;
+  }
+
+  .header-item {
+    margin: 0 0.93rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// Hero Image Section
+.image-background {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 35rem;
+  overflow: hidden;
+
+  .blackground {
+    width: 100%;
+    height: 43.75rem;
+    object-fit: cover;
+    display: block;
+    position: relative;
+  }
+
+  .title_shop_menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    font-size: 3.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $white-color;
+    background-color: $graphite-color;
+    z-index: 1;
+    @include flex-center;
+  }
+
+  .blue-outline {
+    position: absolute;
+    top: 53%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    border: 3px solid $primary-color;
+    z-index: 2;
+  }
+}
+
+// Menu List
+.menu-list {
+  background-color: $graphite-color;
+  padding: 1.12rem 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  &-box {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    @include flex-center;
+  }
+
+  &-item {
+    color: $white-color;
+    font-weight: 500;
+    font-size: 1.12rem;
+    text-decoration: none;
+    width: 4px;
+    padding: 0 1.25rem;
+    position: relative;
+    border-left: 4px solid $primary-color;
+    justify-content: center;
+  }
+}
+
+// Menu Sections
+.menu-category {
+  padding: 3.75rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(even) {
+    background-color: $secondary-color;
+  }
+
+  &:nth-child(odd) {
+    background-color: $light-gray-color;
+  }
+
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    color: $graphite-color;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.menu-item-box {
+  margin: 1.25rem 0;
+  max-width: 50rem;
+  text-align: center;
+}
+
+.menu-item-text {
+  font-size: 1.12rem;
+  line-height: 1.2;
+  color: $graphite-color;
+  max-width: 50rem;
+  margin: 0 auto;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.menu-item {
+  font-size: 1.56rem;
+  line-height: 1.5;
+  color: $graphite-color;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.price {
+  font-size: 1.37rem;
+  color: $primary-color;
+  font-weight: 700;
+  margin-top: 0.62rem;
+  display: block;
+}
+
+// Footer
+footer {
+  background-color: $graphite-color;
+  color: $white-color;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 30%;
+  }
+
+  h3 {
+    font-size: 1.31rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.12rem;
+  }
+}

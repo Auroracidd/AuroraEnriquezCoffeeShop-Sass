@@ -1,0 +1,38 @@
+
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+@import 'partials/base';
+@import 'partials/typography';
+@import 'partials/buttons';
+
+
+@import 'partials/header';
+@import 'partials/navigation';
+@import 'partials/footer';
+@import 'partials/landing';
+@import 'partials/menu';
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.mb-3 { margin-bottom: 3rem; }
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+

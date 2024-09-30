@@ -1,0 +1,41 @@
+.discount {
+    padding: 1.25rem;
+    text-align: center;
+    background-color: $light-gray-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .discount-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80%;
+      margin: 0 auto;
+  
+      .discount-text {
+        background-color: $graphite-color;
+        color: $white-color;
+        padding: 1.25rem;
+        text-align: center;
+        font-size: 2.0rem;
+        font-weight: 500;
+        animation: flashDiscount 2.5s infinite;
+      }
+  
+      .discount-logo {
+        width: 50px;
+        height: auto;
+        margin: 0 1rem;
+      }
+    }
+  }
+  
+  @keyframes flashDiscount {
+    0%, 100% {
+      background-color: $graphite-color;
+    }
+    50% {
+      background-color: $primary-color;
+    }
+  }

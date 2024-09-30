@@ -1,0 +1,38 @@
+.hero-box {
+    background-color: $secondary-color;
+    padding: 3.75rem 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    > div {
+      flex: 1;
+    }
+  
+    .hero-product {
+      font-size: 4.5rem;
+      font-weight: $font-weight-light;
+      margin-bottom: 1.25rem;
+      color: $graphite-color;
+    }
+  
+    .hero-text {
+      font-size: 1.25rem;
+      max-width: 31.25rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      color: $graphite-color;
+    }
+  
+    .hero-image {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10.5rem;
+  
+      img {
+        width: auto;
+        height: auto;
+        max-width: 21.875rem;
+      }
+    }
+  }
